@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T10:10:53.850Z</updated>
+  <updated>2020-03-29T10:25:16.807Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2020/03/29/test/"/>
     <id>http://yoursite.com/2020/03/29/test/</id>
     <published>2020-03-29T10:07:37.000Z</published>
-    <updated>2020-03-29T10:10:53.850Z</updated>
+    <updated>2020-03-29T10:25:16.807Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="This-is-a-test"><a href="#This-is-a-test" class="headerlink" title="This is a test!"></a>This is a test!</h1><p>$$<br>\sum_{i=1}^{n}[gcd(i,n)==1]=\phi(n)\<br>a\in A\<br>b \notin B\<br>\frac{\partial y }{\textbf{x}}<br>$$</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="This-is-a-test"><a href="#This-is-a-test" class="headerlink" title="This is a test!"></a>This is a test!</h1><p>$$<br>\sum_{i=1}^{n}[gcd(i,n)==1]=\phi(n)<br>a\in A<br>b \notin B<br>\frac{\partial y }{\textbf{x}}<br>$$</p>]]></content>
     
     <summary type="html">
     
