@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-13T11:36:06.174Z</updated>
+  <updated>2020-04-13T11:41:00.281Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="http://yoursite.com/2020/04/13/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E7%9A%84%E4%B8%80%E7%B1%BB%E5%A4%8D%E5%B9%B3%E9%9D%A2%E5%81%9A%E6%B3%95/"/>
     <id>http://yoursite.com/2020/04/13/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E7%9A%84%E4%B8%80%E7%B1%BB%E5%A4%8D%E5%B9%B3%E9%9D%A2%E5%81%9A%E6%B3%95/</id>
     <published>2020-04-13T11:29:33.000Z</published>
-    <updated>2020-04-13T11:36:06.174Z</updated>
+    <updated>2020-04-13T11:41:00.281Z</updated>
     
-    <content type="html"><![CDATA[<p>在做AGC039 D 题的时候,我用一种非常麻烦的解析几何的方法暴力证明了那题有关垂心和内心的结论,但是这种做法是过于繁琐的.因此在翻阅codeforce 的discuss 后,我发现了一篇文章,介绍了一种复平面上的论证一些二维几何问题的方法,,其中有关单位圆上的一些结论颇有启发性.因此将这篇文章丢在这里.</p><p> <a href=""/dounload/en-cmplx.pdf"">点击下载</a></p>]]></content>
+    <content type="html"><![CDATA[<p>在做AGC039 D 题的时候,我用一种非常麻烦的解析几何的方法暴力证明了那题有关垂心和内心的结论,但是这种做法是过于繁琐的.</p><p>因此在翻阅codeforce 的discuss 后,我发现了一篇文章,介绍了一种复平面上的论证一些二维几何问题的方法,其中有关单位圆上的一些结论颇有启发性.</p><p>因此将这篇文章丢在这里:</p><p> <a href="D:\my_blog\source\dounload\en-cmplx.pdf">Bashing Geometry with Complex Numbers</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;在做AGC039 D 题的时候,我用一种非常麻烦的解析几何的方法暴力证明了那题有关垂心和内心的结论,但是这种做法是过于繁琐的.因此在翻阅codeforce 的discuss 后,我发现了一篇文章,介绍了一种复平面上的论证一些二维几何问题的方法,,其中有关单位圆上的一些结论颇
+        &lt;p&gt;在做AGC039 D 题的时候,我用一种非常麻烦的解析几何的方法暴力证明了那题有关垂心和内心的结论,但是这种做法是过于繁琐的.&lt;/p&gt;
+&lt;p&gt;因此在翻阅codeforce 的discuss 后,我发现了一篇文章,介绍了一种复平面上的论证一些二维几何问题的方法,其中有关单位圆
       
     
     </summary>
