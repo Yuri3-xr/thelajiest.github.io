@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-26T08:17:06.119Z</updated>
+  <updated>2020-04-28T02:42:04.571Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>周记 4-28</title>
+    <link href="http://yoursite.com/2020/04/28/%E5%91%A8%E8%AE%B0-4-28/"/>
+    <id>http://yoursite.com/2020/04/28/%E5%91%A8%E8%AE%B0-4-28/</id>
+    <published>2020-04-28T02:41:00.000Z</published>
+    <updated>2020-04-28T02:42:04.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>阁下是，人类？ —东方妖妖梦</p><a id="more"></a><p>又是一事无成的一周.想着不能放松刷题,又因为各种懈怠,到头来也没刷几道.</p><p>这周干了些什么呢?</p><p>(1).完成了用flask做后端的网站,并且上线到了某个土豆服务器;</p><p>(2).写了两场AGC;</p><p>(3).打了一次XJTUOJ的比赛,发现自己写$dp$还是不够细心,所以被降秩打击了.</p><p>(4).复习了工科数学分析(最近工数学的难度还是有点大的);</p><p>(5).因为某个题重新学了点分治,发现寒假写的一个spoj的点分治题的bug(数据水当时居然过掉了???).</p><p>综上,这周效率低下,尤其是完成网页搭建的时候真的是像无头苍蝇,搞得自己非常疲惫,想学点前端知识老师又不讲,实现起来”浪费了”许多时间(也许老师的初衷是好的,但是这个作业真的离谱,就是搭建好了又学到了什么呢,还不如等把数据库,前端等专业课上完再学).</p><p>听说要开学了,下周也是五一,所以初步给个下周的plan吧:</p><p>(1).把AGC题解补了;</p><p>(2).打AGC;</p><p>(3).复习口语考试;</p><p>(4).五一出行计划(可能并无);</p><p>(5).数据结构大作业;</p><p>(6).党课;</p><p>五月份可能很多时间都要奉献给文化课了,趁着四月的尾巴,希望自己能开心的度过.有些舍不得家里的环境啊,到学校之前一定要记得买teapigs的红茶,自热火锅可能也是需要的吧,这几天就下单吧…</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;阁下是，人类？ —东方妖妖梦&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="周记" scheme="http://yoursite.com/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>XJTUOJ 校赛模拟赛G</title>
