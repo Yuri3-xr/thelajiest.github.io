@@ -7,10 +7,10 @@
 
     
 
-    <title>Archives: 2020 | KON_automaton&#39;s House</title>
+    <title>SYMBOLIC METHODS | KON_automaton&#39;s House</title>
     <meta name="author" content="John Doe" />
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="The blog is about the ordinary generating function(OGF), and it is updating.The ordinary generating function of a sequence ($A_n$) is the formal power series:$$A(z)=\sum_{n=0}^{\infty}A_nz^n$$The ordinary generating function of a combinatorial ..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -67,7 +67,7 @@
                 <span class="nav-text">标签</span>
             </a>
         
-            <a class="nav-item active" href="/archives">
+            <a class="nav-item" href="/archives">
                 <span class="nav-text">归档</span>
             </a>
         
@@ -83,6 +83,8 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
 
+        
+        
         
         
 
@@ -141,234 +143,72 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                
-
-
+                <article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2020" class="page-hd">
-        2020
-    </a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
+    <header class="article-header">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/08/13/SYMBOLIC-METHODS/">SYMBOLIC METHODS</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/08">
-    
-    <time datetime="2020-08-13T14:53:04.000Z" itemprop="datePublished">8/13</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
+        <h1 itemprop="name">
+            SYMBOLIC METHODS
+        </h1>
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/08/07/Day4G-ZJY%E5%BF%83%E6%83%B3%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%83%BD%E6%94%BE%E4%BD%A0%E4%B8%80%E9%A9%AC%E9%A2%98%E8%A7%A3/">Day4G ZJY心想绝对不能放你一马题解</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/08">
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://yoursite.com/2020/08/13/SYMBOLIC-METHODS/index.html">
     
-    <time datetime="2020-08-07T13:54:25.000Z" itemprop="datePublished">8/7</time>
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2020-08-13T14:53:04.000Z" itemprop="datePublished">2020-08-13</time>
 </a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
 
-    
-    
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/notes/" rel="tag">notes</a>
+</div>
 
-    <li class="archive-section-item">
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/28/%E5%91%A8%E8%AE%B0-4-28/">周记 4-28</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-28T02:41:00.000Z" itemprop="datePublished">4/28</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
+        <p>The blog is about the ordinary generating function(OGF), and it is updating.</p>
+<a id="more"></a>
 
-    
-    
+<p>The ordinary generating function of a sequence ($A_n$) is the formal power series:<br>$$<br>A(z)=\sum_{n=0}^{\infty}A_nz^n<br>$$<br>The ordinary generating function of a combinatorial class $\cal{A}$ is the generating function of numbers $A_n=\rm{card}(\cal{A_n})$.Equivalently, the OGF can also be like:<br>$$<br>A(z)=\sum_{\alpha\in\cal{A}}z^{|(\alpha)|}<br>$$<br>Here is some useful formulas:</p>
+<p>1.1 Sum<br>$$<br>\cal{A}=\cal{B}+\cal{C}\Longrightarrow \it{A}(z)=B(z)+C(z)\<br>$$</p>
+<p><strong>Proof.</strong>  It follows directly from the combinatorial form of OGF:</p>
+<p>$A(z)=\sum_{\alpha\in\cal{A}}z^{|(\alpha)|}=\sum_{\alpha\in\cal{B}}z^{|(\alpha)|}+\sum_{\alpha\in\cal{C}}z^{|(\alpha)|}=B(z)+C(z)$</p>
+<p>1.2 Cartesian product<br>$$<br>\cal{A}=\cal{B}\times\cal{C}\Longrightarrow \it{A}(z)=B(z)C(z)\<br>$$<br><strong>Proof.</strong><br>$$<br>A(z)=\sum_{\alpha\in \cal{A}}z^{|\alpha|}=\sum_{(\beta,\gamma)\in(\cal{B}\times\cal{C})}z^{|\beta|+|\gamma|}=(\sum_{\beta\in\cal{B}}z^{|\beta|})(\sum_{\gamma\in\cal{C}}z^{|\gamma|})=B(z)C(z)<br>$$<br>By considering all possibilities, it is related by the convolution relation:<br>$$<br>A_n=\sum_{k=0}^{n}B_kC_{n-k}<br>$$</p>
 
-    <li class="archive-section-item">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/26/XJTUOJ-%E6%A0%A1%E8%B5%9B%E6%A8%A1%E6%8B%9F%E8%B5%9BG/">XJTUOJ 校赛模拟赛G</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-26T08:15:36.000Z" itemprop="datePublished">4/26</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
+    </section>
 </article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/17/AGC-038%E9%A2%98%E8%A7%A3/">AGC 038题解</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-17T07:14:43.000Z" itemprop="datePublished">4/17</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/13/%E5%91%A8%E8%AE%B0-2020-4-13/">周记(2020-4-13)</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-13T12:52:54.000Z" itemprop="datePublished">4/13</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/13/Bashing-Geometry-with-Complex-Numbers/">Bashing Geometry with Complex Numbers</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-13T12:04:39.000Z" itemprop="datePublished">4/13</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/12/AGC039-%E9%A2%98%E8%A7%A3/">AGC039 题解</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-12T05:49:07.000Z" itemprop="datePublished">4/12</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/05/agc-040/">AGC 040 部分题解(待更)</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-05T14:45:29.000Z" itemprop="datePublished">4/5</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2020/04/04/agc-041/">AGC 041 部分题解</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2020/04">
-    
-    <time datetime="2020-04-04T02:02:37.000Z" itemprop="datePublished">4/4</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
 
 
-</ol></section>
+
+<a id="pagenext" href="/2020/08/07/Day4G-ZJY%E5%BF%83%E6%83%B3%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%83%BD%E6%94%BE%E4%BD%A0%E4%B8%80%E9%A9%AC%E9%A2%98%E8%A7%A3/" class="article-next" title="Day4G ZJY心想绝对不能放你一马题解"><i class="icon-arrow-right"></i></a>
 
 
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7fbe80427f54741e289f",
+        clientSecret: "f34ed5fd92e54c9000bd37ba951948cb939deff5",
+        repo: "sanonz.github.io",
+        owner: "sanonz",
+        admin: ["sanonz"],
+        id: "2020/08/13/SYMBOLIC-METHODS",
+        distractionFreeMode: true,
+        title: "SYMBOLIC METHODS",
+        body: "http://yoursite.com/2020/08/13/SYMBOLIC-METHODS/",
+        labels: ["notes"]
+    }).render('comments');
+    </script>
+</div>
 
 
             </div>
@@ -431,7 +271,34 @@
             }, 3000);
         }
     });
-    </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+    </script>
+    
+        
+<script src="/js/scrollspy.min.js"></script>
+
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>

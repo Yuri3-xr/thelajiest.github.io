@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-07T13:58:59.180Z</updated>
+  <updated>2020-08-13T14:53:58.342Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SYMBOLIC METHODS</title>
+    <link href="http://yoursite.com/2020/08/13/SYMBOLIC-METHODS/"/>
+    <id>http://yoursite.com/2020/08/13/SYMBOLIC-METHODS/</id>
+    <published>2020-08-13T14:53:04.000Z</published>
+    <updated>2020-08-13T14:53:58.342Z</updated>
+    
+    <content type="html"><![CDATA[<p>The blog is about the ordinary generating function(OGF), and it is updating.</p><a id="more"></a><p>The ordinary generating function of a sequence ($A_n$) is the formal power series:<br>$$<br>A(z)=\sum_{n=0}^{\infty}A_nz^n<br>$$<br>The ordinary generating function of a combinatorial class $\cal{A}$ is the generating function of numbers $A_n=\rm{card}(\cal{A_n})$.Equivalently, the OGF can also be like:<br>$$<br>A(z)=\sum_{\alpha\in\cal{A}}z^{|(\alpha)|}<br>$$<br>Here is some useful formulas:</p><p>1.1 Sum<br>$$<br>\cal{A}=\cal{B}+\cal{C}\Longrightarrow \it{A}(z)=B(z)+C(z)\<br>$$</p><p><strong>Proof.</strong>  It follows directly from the combinatorial form of OGF:</p><p>$A(z)=\sum_{\alpha\in\cal{A}}z^{|(\alpha)|}=\sum_{\alpha\in\cal{B}}z^{|(\alpha)|}+\sum_{\alpha\in\cal{C}}z^{|(\alpha)|}=B(z)+C(z)$</p><p>1.2 Cartesian product<br>$$<br>\cal{A}=\cal{B}\times\cal{C}\Longrightarrow \it{A}(z)=B(z)C(z)\<br>$$<br><strong>Proof.</strong><br>$$<br>A(z)=\sum_{\alpha\in \cal{A}}z^{|\alpha|}=\sum_{(\beta,\gamma)\in(\cal{B}\times\cal{C})}z^{|\beta|+|\gamma|}=(\sum_{\beta\in\cal{B}}z^{|\beta|})(\sum_{\gamma\in\cal{C}}z^{|\gamma|})=B(z)C(z)<br>$$<br>By considering all possibilities, it is related by the convolution relation:<br>$$<br>A_n=\sum_{k=0}^{n}B_kC_{n-k}<br>$$</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The blog is about the ordinary generating function(OGF), and it is updating.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+    
+  </entry>
   
   <entry>
     <title>Day4G ZJY心想绝对不能放你一马题解</title>
