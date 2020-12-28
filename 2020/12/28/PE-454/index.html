@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8" />
+
+    
+
+    
+
+    <title>PE 454 | KON_automaton&#39;s House</title>
+    <meta name="author" content="John Doe" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="PE 454题意:求满足$x&amp;lt;y\leq L$及下述等式的二元组$(x,y)$的个数.$$\frac{1}{x}+\frac{1}{y}=\frac{1}{n}$$其中$n$任取.设$g=\gcd(x,y)$,$x=ag,y=bg$,显然有$(a,b)=1$.则原约束变为:$$\frac{a+b}{ab}=\frac{g}{n}$$初等数论告诉我们这里有:$gcd(a+b,ab)=1$,故$g,n$互素.故设$g=t(a+b),n=tab$,则我们要求的就是满足下列约束的二..." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+
+    
+    <link rel="alternate" href="/atom.xml" title="KON_automaton&#39;s House" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/images/1.ico">
+    
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'icomoon';
+        src: url("/fonts/icomoon.eot?q628ml");
+        src: url("/fonts/icomoon.eot?q628ml#iefix") format('embedded-opentype'),
+             url("/fonts/icomoon.ttf?q628ml") format('truetype'),
+             url("/fonts/icomoon.woff?q628ml") format('woff'),
+             url("/fonts/icomoon.svg?q628ml#icomoon") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!--[if lt IE 9]>
+    <style type="text/css">
+    .nav-inner {top:0;}
+    .author-meta {position:static;top:0;}
+    .search-form {height:36px;}
+    </style>
+    <script type="text/javascript" src="https://unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+<body>
+
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><main class="app">
+        <header id="header" class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">KON_automaton&#39;s House</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#PE-454"><span class="toc-number">1.</span> <span class="toc-text">PE 454</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content">
+            <div id="wrapper" class="wrapper" style="max-width: 800px">
+                <article class="article" itemscope itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            PE 454
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://yoursite.com/2020/12/28/PE-454/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2020-12-28T07:51:10.000Z" itemprop="datePublished">2020-12-28</time>
+</a>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/PE/" rel="tag">PE</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <h3 id="PE-454"><a href="#PE-454" class="headerlink" title="PE 454"></a>PE 454</h3><p>题意:求满足$x&lt;y\leq L$及下述等式的二元组$(x,y)$的个数.<br>$$<br>\frac{1}{x}+\frac{1}{y}=\frac{1}{n}<br>$$<br>其中$n$任取.</p>
+<a id="more"></a>
+
+<p>设$g=\gcd(x,y)$,$x=ag,y=bg$,显然有$(a,b)=1$.</p>
+<p>则原约束变为:<br>$$<br>\frac{a+b}{ab}=\frac{g}{n}<br>$$<br>初等数论告诉我们这里有:$gcd(a+b,ab)=1$,故$g,n$互素.</p>
+<p>故设$g=t(a+b),n=tab$,则我们要求的就是满足下列约束的二元组$(a,b)$的个数:<br>$$<br>t(a+b)a\leq L,a&lt;b,gcd(a,b)=1<br>$$<br>尝试枚举$a,b$:<br>$$<br>ans=\sum_{a=1}^{\sqrt{L}}\sum_{b=a+1}^{\sqrt{L}}\frac{L}{a(a+b)}[(a,b)==1]=\sum_{b=1}^{\sqrt{L}}\sum_{a=b+1}^{2b-1}\frac{L}{ab}[(a,b)==1]<br>$$<br>然后就是套路地莫比乌斯反演就行了.<br>$$<br>ans=\sum_{b=1}^{\sqrt{L}}\sum_{a=b+1}^{2b-1}\frac{L}{ab}\sum_{d|(a,b)}\mu(d)=\sum_{d=1}^{\sqrt{L}}\mu(d)\sum_{b=1}^{\sqrt{L}}\sum_{a=b+1}^{2b-1}\frac{L}{ab}[d|a][d|b]=\sum_{d=1}^{\sqrt{L}}\mu(d)\sum_{b=1}^{\sqrt{L/d^2}}\sum_{a=b+1}^{2b-1}\frac{L}{abd^2}<br>$$<br>然后就做完了.</p>
+<p>直接整除分块复杂度大概是$O(很快)$的样子(并没有认真算过复杂度)</p>
+<p>为什么要写题解呢,大概是个套路吧,PE 735也是一个道理的样子.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> __int128 lll;</span><br><span class="line"><span class="keyword">namespace</span> IO</span><br><span class="line">&#123;</span><br><span class="line">	<span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(T &amp;x)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		x=<span class="number">0</span>;ll f=<span class="number">1</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">		<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch))&#123;<span class="keyword">if</span>(ch==<span class="string">'-'</span>) f=-f;ch=getchar();&#125;</span><br><span class="line">		<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch))&#123;x=x*<span class="number">10</span>+ch<span class="number">-48</span>;ch=getchar();&#125;</span><br><span class="line">		x=x*f;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> IO;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">sum</span><span class="params">(ll t,ll Begin,ll End)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ll sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ll l=Begin,r;l&lt;=End;l=r+<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		ll val=t/l;</span><br><span class="line">		<span class="keyword">if</span>(val) r=min(t/val,End);</span><br><span class="line">		<span class="keyword">else</span> r=End;</span><br><span class="line">		sum+=(r-l+<span class="number">1</span>)*(t/l);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">int</span> <span class="title">maxn</span> <span class="params">(<span class="number">10000000</span>+<span class="number">1</span>)</span></span>;</span><br><span class="line"><span class="keyword">int</span> p[maxn],mu[maxn],flg[maxn];<span class="keyword">int</span> tot;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getMu</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    mu[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>;i &lt;= n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(!flg[i])  p[++tot] = i, mu[i] = <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;j &lt;= tot &amp;&amp; i*p[j] &lt;= n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            flg[i*p[j]] = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i % p[j] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                mu[i*p[j]] = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                mu[i*p[j]] = -mu[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ll L;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;L;</span><br><span class="line">	getMu(<span class="built_in">sqrt</span>(L)+<span class="number">10</span>);</span><br><span class="line">	ll ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ll i=<span class="number">1</span>;<span class="number">1l</span>l*i*i&lt;=L;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		ll res=<span class="number">0</span>;</span><br><span class="line">		ll bound=L/i/i;</span><br><span class="line">		<span class="keyword">for</span>(ll j=<span class="number">1</span>;<span class="number">1l</span>l*j*j&lt;=bound;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			res+=sum(bound/j,j+<span class="number">1</span>,<span class="number">2</span>*j<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		ans+=mu[i]*res;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>附上一个PE 735的代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> __int128 lll;</span><br><span class="line"><span class="keyword">namespace</span> IO</span><br><span class="line">&#123;</span><br><span class="line">	<span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(T &amp;x)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		x=<span class="number">0</span>;ll f=<span class="number">1</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">		<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch))&#123;<span class="keyword">if</span>(ch==<span class="string">'-'</span>) f=-f;ch=getchar();&#125;</span><br><span class="line">		<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch))&#123;x=x*<span class="number">10</span>+ch<span class="number">-48</span>;ch=getchar();&#125;</span><br><span class="line">		x=x*f;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> IO;</span><br><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">int</span> <span class="title">maxn</span> <span class="params">(<span class="number">10000000</span>+<span class="number">100</span>)</span></span>;</span><br><span class="line"><span class="keyword">int</span> p[maxn],mu[maxn],flg[maxn];<span class="keyword">int</span> tot;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getMu</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    mu[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>;i &lt;= n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(!flg[i])  p[++tot] = i, mu[i] = <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;j &lt;= tot &amp;&amp; i*p[j] &lt;= n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            flg[i*p[j]] = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i % p[j] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                mu[i*p[j]] = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                mu[i*p[j]] = -mu[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">f1</span><span class="params">(ll Begin,ll End,ll t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ll sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ll l=Begin,r;l&lt;=End;l=r+<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		ll val=t/l;</span><br><span class="line">		<span class="keyword">if</span>(val) r=min(t/val,End);</span><br><span class="line">		<span class="keyword">else</span> r=End;</span><br><span class="line">		sum+=(r-l+<span class="number">1</span>)*(t/l);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">f2</span><span class="params">(ll Begin,ll End,ll t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ll sum=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ll l=Begin,r;l&lt;=End;l=r+<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		ll val=t/l;</span><br><span class="line">		<span class="keyword">if</span>(val) r=min(t/val,End);</span><br><span class="line">		<span class="keyword">else</span> r=End;</span><br><span class="line">		<span class="keyword">if</span>((r-l+<span class="number">1</span>)%<span class="number">2</span>==<span class="number">0</span>)</span><br><span class="line">			sum+=(r-l+<span class="number">1</span>)*(t/l)/<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">if</span>(l%<span class="number">2</span>==<span class="number">1</span>)</span><br><span class="line">				sum+=(r-l+<span class="number">2</span>)*(t/l)/<span class="number">2</span>;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				sum+=(r-l)*(t/l)/<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ll L;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;L;</span><br><span class="line">	getMu(<span class="number">1000000</span>);</span><br><span class="line">	ll ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ll i=<span class="number">1</span>;i*i&lt;=L;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		ll res=<span class="number">0</span>;</span><br><span class="line">		ll bound=L/i/i;</span><br><span class="line">		<span class="keyword">for</span>(ll j=<span class="number">1</span>;j*j&lt;=bound;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">1</span>)</span><br><span class="line">				res+=f2(<span class="number">2</span>*j+<span class="number">1</span>,<span class="number">2</span>*j+L/(j*i),bound/j);</span><br><span class="line">		&#125;</span><br><span class="line">		ans+=mu[i]*res;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(ll i=<span class="number">1</span>;<span class="number">1l</span>l*i*i&lt;=L;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		ll res=<span class="number">0</span>;</span><br><span class="line">		ll bound=L/i/i;</span><br><span class="line">		<span class="keyword">for</span>(ll j=<span class="number">1</span>;<span class="number">1l</span>l*j*j&lt;=bound;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(j*i%<span class="number">2</span>==<span class="number">1</span>)</span><br><span class="line">				res+=f1(j+<span class="number">1</span>,j+L/(j*i),bound/j);</span><br><span class="line">		&#125;</span><br><span class="line">		ans+=mu[i]*res;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans+L&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+        
+    </section>
+</article>
+
+
+
+<a id="pagenext" href="/2020/08/13/SYMBOLIC-METHODS/" class="article-next" title="SYMBOLIC METHODS"><i class="icon-arrow-right"></i></a>
+
+
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7fbe80427f54741e289f",
+        clientSecret: "f34ed5fd92e54c9000bd37ba951948cb939deff5",
+        repo: "sanonz.github.io",
+        owner: "sanonz",
+        admin: ["sanonz"],
+        id: "2020/12/28/PE-454",
+        distractionFreeMode: true,
+        title: "PE 454",
+        body: "http://yoursite.com/2020/12/28/PE-454/",
+        labels: ["PE"]
+    }).render('comments');
+    </script>
+</div>
+
+
+            </div>
+        </div>
+        <footer class="footer">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme by <a href="https://github.com/sanonz/hexo-theme-concise" target="_blank">Concise</a>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e4027971a230b210f4671f485b33846a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        
+<script src="/js/scrollspy.min.js"></script>
+
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+    
+
+</body>
+</html>
