@@ -7,10 +7,10 @@
 
     
 
-    <title>KON_automaton&#39;s House</title>
+    <title>PE746 | KON_automaton&#39;s House</title>
     <meta name="author" content="John Doe" />
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="是个夫妻选座问题的升级版,感觉如果很会二项式反演的话确实也没什么意思.首先按照二项式反演的套路,”恰好”不容易计算就计算”至少”的.设$f(k)$表示恰好$k$组家庭坐在一起,$g(k)$表示钦定$k$组家庭坐在一起,其他随意.显然,我们有以下式子:$$g(i)=\sum_{k=i}^n C_{k}^{i}f(i)$$使用二项式反演:$$f(i)=\sum_{k=i}^n (-1)^{k-i}C_{k}^{i}g(i)$$因此我们只要知道$g$,就知道$f$了.显然:$$g(k)=2C_..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -59,7 +59,7 @@
 
     <nav id="nav-inner" class="nav-inner">
         
-            <a class="nav-item active" href="/">
+            <a class="nav-item" href="/">
                 <span class="nav-text">首页</span>
             </a>
         
@@ -83,6 +83,8 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
 
+        
+        
         
         
 
@@ -141,17 +143,16 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                
-    <article class="article" itemscope itemprop="blogPost">
+                <article class="article" itemscope itemprop="blogPost">
     
     <header class="article-header">
         
         <h1 itemprop="name">
-            <a href="/2021/02/10/PE746/">PE746</a>
+            PE746
         </h1>
         
         <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
+            <a class="article-date" href="http://yoursite.com/2021/02/10/PE746/index.html">
     
     <i class="icon-calendar"></i>
     
@@ -183,398 +184,30 @@
 </article>
 
 
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2021/02/07/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E4%BC%AA/">数论分块(伪)</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2021-02-07T13:12:18.000Z" itemprop="datePublished">2021-02-07</time>
-</a>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+<a id="pagenext" href="/2021/02/07/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E4%BC%AA/" class="article-next" title="数论分块(伪)"><i class="icon-arrow-right"></i></a>
+
+
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7fbe80427f54741e289f",
+        clientSecret: "f34ed5fd92e54c9000bd37ba951948cb939deff5",
+        repo: "sanonz.github.io",
+        owner: "sanonz",
+        admin: ["sanonz"],
+        id: "2021/02/10/PE746",
+        distractionFreeMode: true,
+        title: "PE746",
+        body: "http://yoursite.com/2021/02/10/PE746/",
+        labels: ["PE"]
+    }).render('comments');
+    </script>
 </div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>本文大概写了一种广为人知的数论分块技巧.是在水PE的时候搬过来的,复杂度的证明可以去翻论文.</p>
-        
-        <p class="article-more-link">
-            <a href="/2021/02/07/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97-%E4%BC%AA/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/12/28/PE-454/">PE 454</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-12-28T07:51:10.000Z" itemprop="datePublished">2020-12-28</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/PE/" rel="tag">PE</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <h3 id="PE-454"><a href="#PE-454" class="headerlink" title="PE 454"></a>PE 454</h3><p>题意:求满足$x&lt;y\leq L$及下述等式的二元组$(x,y)$的个数.<br>$$<br>\frac{1}{x}+\frac{1}{y}=\frac{1}{n}<br>$$<br>其中$n$任取.</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/12/28/PE-454/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/08/13/SYMBOLIC-METHODS/">SYMBOLIC METHODS</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-08-13T14:53:04.000Z" itemprop="datePublished">2020-08-13</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/notes/" rel="tag">notes</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>The blog is about the ordinary generating function(OGF), and it is updating.</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/08/13/SYMBOLIC-METHODS/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/08/07/Day4G-ZJY%E5%BF%83%E6%83%B3%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%83%BD%E6%94%BE%E4%BD%A0%E4%B8%80%E9%A9%AC%E9%A2%98%E8%A7%A3/">Day4G ZJY心想绝对不能放你一马题解</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-08-07T13:54:25.000Z" itemprop="datePublished">2020-08-07</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>题意:给定一个序列${a_i}$,在$K_{a_i}~1\leq i\leq n$任取一个点,将这n个点依次连接形成一个环,求问有多少种方式删边使得这张图不存在环.</p>
-<p>数据范围:$1\leq n\leq 2e5$</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/08/07/Day4G-ZJY%E5%BF%83%E6%83%B3%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%83%BD%E6%94%BE%E4%BD%A0%E4%B8%80%E9%A9%AC%E9%A2%98%E8%A7%A3/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/04/28/%E5%91%A8%E8%AE%B0-4-28/">周记 4-28</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-04-28T02:41:00.000Z" itemprop="datePublished">2020-04-28</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/%E5%91%A8%E8%AE%B0/" rel="tag">周记</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>阁下是，人类？ —东方妖妖梦</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/04/28/%E5%91%A8%E8%AE%B0-4-28/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/04/26/XJTUOJ-%E6%A0%A1%E8%B5%9B%E6%A8%A1%E6%8B%9F%E8%B5%9BG/">XJTUOJ 校赛模拟赛G</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-04-26T08:15:36.000Z" itemprop="datePublished">2020-04-26</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/%E6%A0%91%E5%BD%A2dp/" rel="tag">树形dp</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <h2 id="XJTUOJ-校赛模拟赛G"><a href="#XJTUOJ-校赛模拟赛G" class="headerlink" title="XJTUOJ  校赛模拟赛G"></a>XJTUOJ  校赛模拟赛G</h2><p>校赛模拟赛这个G其实场上有这个思路,但是这道题的$dp$转移还是很容易写错的.尤其是初值的问题,要考虑清楚$dp$的意义,以下的题解中的$dp$方式有点奇怪,可能并非最简单的$dp$方式,不过也足以通过这道题.</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/04/26/XJTUOJ-%E6%A0%A1%E8%B5%9B%E6%A8%A1%E6%8B%9F%E8%B5%9BG/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/04/17/AGC-038%E9%A2%98%E8%A7%A3/">AGC 038题解</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-04-17T07:14:43.000Z" itemprop="datePublished">2020-04-17</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/AGC/" rel="tag">AGC</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>A 构造</p>
-<p>B 联通性</p>
-<p>C 莫比乌斯反演</p>
-<p>D 图论</p>
-<p>E dp</p>
-<p>F 网络流</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/04/17/AGC-038%E9%A2%98%E8%A7%A3/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/04/13/%E5%91%A8%E8%AE%B0-2020-4-13/">周记(2020-4-13)</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-04-13T12:52:54.000Z" itemprop="datePublished">2020-04-13</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/%E5%91%A8%E8%AE%B0/" rel="tag">周记</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>一个人走在路上，形单影只。回首望去，大家都留在远方。回过头来继续前行，这便是所谓坚强。 </p>
-<p>​                                                                                                                                    —Angel Beats</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/04/13/%E5%91%A8%E8%AE%B0-2020-4-13/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2020/04/13/Bashing-Geometry-with-Complex-Numbers/">Bashing Geometry with Complex Numbers</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/index.html">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2020-04-13T12:04:39.000Z" itemprop="datePublished">2020-04-13</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/%E8%AE%BA%E6%96%87/" rel="tag">论文</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>在做AGC039 D 题的时候,我用一种非常麻烦的解析几何的方法暴力证明了那题有关垂心和内心的结论,但是这种做法是过于繁琐的.</p>
-<p>因此在翻阅codeforces 的discuss 后,我发现了一篇文章,介绍了一种复平面上的论证一些二维几何问题的方法,其中有关单位圆上的一些结论颇有启发性.</p>
-        
-        <p class="article-more-link">
-            <a href="/2020/04/13/Bashing-Geometry-with-Complex-Numbers/#more">
-                <span class="vm">阅读更多</span>
-                <i class="icon-arrow-double-right vm"></i>    
-            </a>
-        </p>
-        
-        
-    </section>
-</article>
-
-
-
-
-<nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-</nav>
-
 
 
             </div>
@@ -637,7 +270,34 @@
             }, 3000);
         }
     });
-    </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+    </script>
+    
+        
+<script src="/js/scrollspy.min.js"></script>
+
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
