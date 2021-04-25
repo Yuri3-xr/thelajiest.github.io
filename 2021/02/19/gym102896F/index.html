@@ -10,7 +10,7 @@
     <title>gym102896F | KON_automaton&#39;s House</title>
     <meta name="author" content="John Doe" />
     <meta name="keywords" content="" />
-    <meta name="description" content="题意:给定$a,b,c,n(\leq6e5)$,求$\Pi_{i=0}^{n-1}ai^2+bi+c$的最大平方因子.答案模质数.首先考虑每一个质数的贡献.$$ans=\Pi p^{\alpha}$$那么对于$\alpha\geq 2$的质数,则会对答案产生贡献$\alpha-\alpha\mod 2$.假设可能会产生的贡献的质数”比较少”,那么可以用以下方法得到贡献:首先对于一个可能质数$p$,解同余方程$ax^2+bx+c\equiv 0\mod p$.(1)在$2a$有逆..." />
+    <meta name="description" content="题意:给定$a,b,c,n(\leq6e5)$,求$\prod_{i=0}^{n-1}ai^2+bi+c$的最大平方因子.答案模质数.首先考虑每一个质数的贡献.$$ans=\prod p^{\alpha}$$那么对于$\alpha\geq 2$的质数,则会对答案产生贡献$\alpha-\alpha\mod 2$.假设可能会产生的贡献的质数”比较少”,那么可以用以下方法得到贡献:首先对于一个可能质数$p$,解同余方程$ax^2+bx+c\equiv 0\mod p$.(1)在$2..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -171,10 +171,10 @@
     
     <section class="article-body markdown-body">
         
-        <p>题意:给定$a,b,c,n(\leq6e5)$,求$\Pi_{i=0}^{n-1}ai^2+bi+c$的最大平方因子.答案模质数.</p>
+        <p>题意:给定$a,b,c,n(\leq6e5)$,求$\prod_{i=0}^{n-1}ai^2+bi+c$的最大平方因子.答案模质数.</p>
 <a id="more"></a>
 
-<p>首先考虑每一个质数的贡献.<br>$$<br>ans=\Pi p^{\alpha}<br>$$<br>那么对于$\alpha\geq 2$的质数,则会对答案产生贡献$\alpha-\alpha\mod 2$.</p>
+<p>首先考虑每一个质数的贡献.<br>$$<br>ans=\prod p^{\alpha}<br>$$<br>那么对于$\alpha\geq 2$的质数,则会对答案产生贡献$\alpha-\alpha\mod 2$.</p>
 <p>假设可能会产生的贡献的质数”比较少”,那么可以用以下方法得到贡献:</p>
 <p>首先对于一个可能质数$p$,解同余方程$ax^2+bx+c\equiv 0\mod p$.</p>
 <p>(1)在$2a$有逆元的情况下,可以直接带入一元二次方程求根公式算.</p>
