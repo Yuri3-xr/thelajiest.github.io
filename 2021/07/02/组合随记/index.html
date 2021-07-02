@@ -89,7 +89,7 @@
         
 
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-母函数闭形式的计算"><span class="toc-number">1.</span> <span class="toc-text">1.母函数闭形式的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#容斥原理的计算"><span class="toc-number">2.</span> <span class="toc-text">容斥原理的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#符号技巧"><span class="toc-number">3.</span> <span class="toc-text">符号技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多项式展开"><span class="toc-number">4.</span> <span class="toc-text">多项式展开</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#旋转同构"><span class="toc-number">5.</span> <span class="toc-text">旋转同构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排列生成算法"><span class="toc-number">6.</span> <span class="toc-text">排列生成算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#区间设计"><span class="toc-number">7.</span> <span class="toc-text">区间设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整数拆分"><span class="toc-number">8.</span> <span class="toc-text">整数拆分</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-母函数闭形式的计算"><span class="toc-number">1.</span> <span class="toc-text">1.母函数闭形式的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-容斥原理的计算"><span class="toc-number">2.</span> <span class="toc-text">2.容斥原理的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-符号技巧"><span class="toc-number">3.</span> <span class="toc-text">3.符号技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-多项式展开"><span class="toc-number">4.</span> <span class="toc-text">4.多项式展开</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-旋转同构"><span class="toc-number">5.</span> <span class="toc-text">5.旋转同构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-排列生成算法"><span class="toc-number">6.</span> <span class="toc-text">6.排列生成算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-区间设计"><span class="toc-number">7.</span> <span class="toc-text">7.区间设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-整数拆分"><span class="toc-number">8.</span> <span class="toc-text">8.整数拆分</span></a></li></ol>
         
     </div>
 </aside>
@@ -136,10 +136,10 @@
 <p>其中$G(x)$是关于$x$的$n$次多项式。待定系数后用系数对比法即可解得。</p>
 <p>例：$\sum_{i\geq 0}i^3x^i$</p>
 <p>设$G(x)=Ax^3+Bx^2+Cx+D$,得：<br>$$<br>r(r-1)(r-2)A+(r+1)r(r-1)B+(r+2)(r+1)rC+(r+3)(r+2)(r+1)D=3!r^3<br>$$<br>对比系数得$A=1,B=4,C=1,D=0$,故原级数的闭形式是$\frac{x^3+4x^2+x}{(1-x)^4}$</p>
-<h2 id="容斥原理的计算"><a href="#容斥原理的计算" class="headerlink" title="容斥原理的计算"></a>容斥原理的计算</h2><p>二项式反演的本质就是容斥，不过二项式反演有时候要更加容易计算。</p>
+<h2 id="2-容斥原理的计算"><a href="#2-容斥原理的计算" class="headerlink" title="2.容斥原理的计算"></a>2.容斥原理的计算</h2><p>二项式反演的本质就是容斥，不过二项式反演有时候要更加容易计算。</p>
 <p>经典套路：要算恰好$k$个方案数$f_k$,其实可以先算出至少$k$个的方案数$g_k$。<br>$$<br>g_k=\sum_{i=k}^mC_i^kf_i<br>$$<br>根据二项式反演：<br>$$<br>f_k=\sum_{i=k}^m(-1)^{i-k}C_i^kg_i<br>$$<br>因为$g$更容易算，所以可以这样搞。</p>
 <p>例：带禁区的排列，第二类斯特林数容斥形式。</p>
-<h2 id="符号技巧"><a href="#符号技巧" class="headerlink" title="符号技巧"></a>符号技巧</h2><p>刚刚提到了第二类斯特林数的容斥式子啊，其实除了容斥，还可以有一种不优雅的代数推导。</p>
+<h2 id="3-符号技巧"><a href="#3-符号技巧" class="headerlink" title="3.符号技巧"></a>3.符号技巧</h2><p>刚刚提到了第二类斯特林数的容斥式子啊，其实除了容斥，还可以有一种不优雅的代数推导。</p>
 <p>符号技巧其实就是考虑生成的方式，然后写出生成函数。</p>
 <p>详情去看分析组合的Part 1.</p>
 <p>例：考虑第二类斯特林数的EGF，$S(n,m)=n![x^n]\frac{(e^x-1)^m}{m!}$</p>
@@ -147,14 +147,14 @@
 <p>小球带标号，故选用EGF，考虑生成方式，是$MULTISET_m$,故</p>
 <p>为$\frac{F(x)^m}{m!}$,$F(x)$是每个生成元素的EGF，由于不能有空盒子，故$F(x)=e^x-1$.然后就得到了上面那个式子.</p>
 <p>对这个式子二项式展开：<br>$$<br>S(n,m)m!=n![x^n]\sum_{i=0}^m(-1)^{m-i}C_m^i\sum_{j\geq 0} \frac{(ix)^j}{j!}<br>$$<br>后面那一坨东西只有一项对 $[x^n]$有贡献：<br>$$<br>S(n,m)m!=\sum_{i=0}^{m}(-1)^{m-i}C_m^ii^n<br>$$<br>代换$i$和$m-i$即可得到第二类斯特林数的容斥式子。</p>
-<h2 id="多项式展开"><a href="#多项式展开" class="headerlink" title="多项式展开"></a>多项式展开</h2><p>这是个常见技巧来着。<br>$$<br>(x_1+x_2+…+x_n)^k=\sum_{\alpha_1+\alpha_2+…\alpha_n=k}\frac{k!}{(\alpha_1)!(\alpha_2)!…(\alpha_n)!}x_1^{\alpha_1}x_2^{\alpha_2}…x_n^{\alpha_n}<br>$$<br>考试直接套公式就行了。</p>
-<h2 id="旋转同构"><a href="#旋转同构" class="headerlink" title="旋转同构"></a>旋转同构</h2><p>本质不同的项链好像经常考。可以使用标号方法随便搞，但是其实也可以直接套用以下公式：<br>$$<br>F_n=\frac{f<em>\phi(n)}{n}<br>$$<br>其中$</em>$表示迪利克雷卷积。$f$是不考虑旋转同构的序列种数。</p>
+<h2 id="4-多项式展开"><a href="#4-多项式展开" class="headerlink" title="4.多项式展开"></a>4.多项式展开</h2><p>这是个常见技巧来着。<br>$$<br>(x_1+x_2+…+x_n)^k=\sum_{\alpha_1+\alpha_2+…\alpha_n=k}\frac{k!}{(\alpha_1)!(\alpha_2)!…(\alpha_n)!}x_1^{\alpha_1}x_2^{\alpha_2}…x_n^{\alpha_n}<br>$$<br>考试直接套公式就行了。</p>
+<h2 id="5-旋转同构"><a href="#5-旋转同构" class="headerlink" title="5.旋转同构"></a>5.旋转同构</h2><p>本质不同的项链好像经常考。可以使用标号方法随便搞，但是其实也可以直接套用以下公式：<br>$$<br>F_n=\frac{f<em>\phi(n)}{n}<br>$$<br>其中$</em>$表示迪利克雷卷积。$f$是不考虑旋转同构的序列种数。</p>
 <p>证明的话就是Burnside引理计算就行了。</p>
 <p>还有个升级版本：考虑多重集合${aA,bB,…,zZ}$排成的项链，其中多重集合的势就是项链的长度。</p>
 <p>那么考虑旋转同构的方案数为：<br>$$<br>F(n)=\frac{\sum_{d|(a,b,…z)}\phi(d)(^{n/d}_{a/d,b/d,…,z/d})}{n}<br>$$<br>旋转同构自己搞吧，其实也有公式。</p>
-<h2 id="排列生成算法"><a href="#排列生成算法" class="headerlink" title="排列生成算法"></a>排列生成算法</h2><p>没啥想搞的，只是想吐槽考试考这个真踏马没意思。</p>
-<h2 id="区间设计"><a href="#区间设计" class="headerlink" title="区间设计"></a>区间设计</h2><p>也没啥想讲的，只是想吐槽考试考这个真踏马很困难。</p>
-<h2 id="整数拆分"><a href="#整数拆分" class="headerlink" title="整数拆分"></a>整数拆分</h2><p>书上总结的非常全面了，五边形数公式也和考试正交，所以有兴趣自己查一查吧。</p>
+<h2 id="6-排列生成算法"><a href="#6-排列生成算法" class="headerlink" title="6.排列生成算法"></a>6.排列生成算法</h2><p>没啥想搞的，只是想吐槽考试考这个真踏马没意思。</p>
+<h2 id="7-区间设计"><a href="#7-区间设计" class="headerlink" title="7.区间设计"></a>7.区间设计</h2><p>也没啥想讲的，只是想吐槽考试考这个真踏马很困难。</p>
+<h2 id="8-整数拆分"><a href="#8-整数拆分" class="headerlink" title="8.整数拆分"></a>8.整数拆分</h2><p>书上总结的非常全面了，五边形数公式也和考试正交，所以有兴趣自己查一查吧。</p>
 <p>记住一个用Ferrers图像推出来的强力结论：</p>
 <p>将$n$拆分成恰好$k$个数的和的拆分数等于将$n$拆分成最大数为$k$的和的拆分数。这结论很nb,其实也有代数证明就是了。</p>
 
